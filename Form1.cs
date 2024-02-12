@@ -43,7 +43,7 @@ namespace archivosTextoProyecto
             OpenFileDialog openFileDialog1 = new OpenFileDialog();
 
             //Directorio en donde se va a iniciar la busqueda
-            openFileDialog1.InitialDirectory = @"C:\Users\derickcux2023\Desktop";
+            openFileDialog1.InitialDirectory = @"C:\Users\derickcux2023\source\repos\archivosTextoProyecto\bin\Debug";
             //Tipos de archivos que se van a buscar, en este caso archivos de texto con extensión .txt
             openFileDialog1.Filter = "txt files (*.txt)|*.txt|All files (*.*)|*.*";
 
@@ -74,7 +74,7 @@ namespace archivosTextoProyecto
 
         private void buttonLeerDirecto_Click(object sender, EventArgs e)
         {
-            string fileName = @"C:\Users\derickcux2023\Desktop\PruebaGuardado.txt";
+            string fileName = @"C:\Users\derickcux2023\Documents\PruebaGuardado.txt";
 
             //Abrimos el archivo, en este caso lo abrimos para lectura
             FileStream flujo = new FileStream(fileName, FileMode.Open, FileAccess.Read);
